@@ -1,0 +1,2 @@
+class SilverProduct < ApplicationRecord
+end

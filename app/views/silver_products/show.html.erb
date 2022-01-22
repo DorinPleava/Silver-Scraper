@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @silver_product.title %>
+</p>
+
+<p>
+  <strong>In stock:</strong>
+  <%= @silver_product.in_stock %>
+</p>
+
+<p>
+  <strong>Total Price:</strong>
+  <%= @silver_product.total_price %>
+</p>
+
+<strong>Piece per oz:</strong>
+  <%= @silver_product.price_per_oz %>
+</p>
+
+<p>
+  <strong>Pieces:</strong>
+  <%= @silver_product.pieces %>
+</p>
+
+
+<%= link_to 'Edit', edit_silver_product_path(@silver_product) %> |
+<%= link_to 'Back', silver_products_path %>

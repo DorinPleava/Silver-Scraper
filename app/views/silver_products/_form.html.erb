@@ -1,0 +1,52 @@
+<%= form_with(model: silver_product) do |form| %>
+  <% if silver_product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(silver_product.errors.count, "error") %> prohibited this silver_product from being saved:</h2>
+
+      <ul>
+        <% silver_product.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :in_stock %>
+    <%= form.text_field :in_stock %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_price %>
+    <%= form.number_field :total_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pieces %>
+    <%= form.number_field :pieces %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price_per_piece %>
+    <%= form.number_field :price_per_piece %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :price_per_oz %>
+    <%= form.number_field :price_per_oz %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ounce_per_piece %>
+    <%= form.number_field :ounce_per_piece %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module SilverProductsHelper
+end
