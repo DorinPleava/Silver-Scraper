@@ -25,6 +25,14 @@ default: &default
   # password: <%= ENV['AZURE_PW'] %>
   # port: 1433
 
+production:
+  <<: *default
+  host: <%= ENV['AZURE_DB_HOST'] %>
+  port: 5432
+  database: <%= ENV['AZURE_DB_DATABASE'] %>
+  username: <%= ENV['AZURE_DB_USERNAME'] %>
+  password: <%= ENV['AZURE_DB_PASSWORD'] %>
+
 development:
   <<: *default
   database: silver_scraper_development
