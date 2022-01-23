@@ -1,3 +1,7 @@
+
+# api keys
+.env  
+
 *.rbc
 capybara-*.html
 .rspec
@@ -67,3 +71,10 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 /public/uploads
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

@@ -20,10 +20,16 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # host: <%= ENV['AZURE_HOST'] %>
+  # username: <%= ENV['AZURE_UN'] %>
+  # password: <%= ENV['AZURE_PW'] %>
+  # port: 1433
 
 development:
   <<: *default
   database: silver_scraper_development
+  # database: <%= ENV['AZURE_DB'] %>
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +64,7 @@ development:
 test:
   <<: *default
   database: silver_scraper_test
+  # database: <%= ENV['AZURE_DB'] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
