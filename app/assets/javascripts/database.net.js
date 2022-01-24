@@ -1,3 +1,9 @@
+require('jquery')
+
+import $ from 'jquery'
+
+import 'datatables.net';
+
 $(document).ready(function () {
 	$('#example').DataTable({
 		"pageLength": 50,

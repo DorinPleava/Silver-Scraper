@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.3'
+# ruby '2.7.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
@@ -55,3 +55,5 @@ gem "pry-byebug", "~> 3.8"
 gem "rubocop", "~> 1.23"
 
 gem "rspec", "~> 3.10"
+
+gem "jquery-rails", "~> 4.4"
